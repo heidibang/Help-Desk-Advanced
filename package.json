@@ -11,12 +11,8 @@
   "scripts": {
     "start": "cross-env NODE_ENV=production node server/server.js",
     "build": "cross-env NODE_ENV=production webpack",
-<<<<<<< HEAD
-    "dev": "cross-env NODE_ENV=development concurrently \"webpack-dev-server --open\" \"nodemon server/server.js\""
-=======
     "dev": "cross-env NODE_ENV=development concurrently 'webpack-dev-server --open' 'nodemon server/server.js'",
     "test": "jest --verbose"
->>>>>>> e46da85c5b0b6ea7a18c4bd498d8d209b02252e9
   },
   "keywords": [],
   "author": "",
