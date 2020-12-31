@@ -22,10 +22,11 @@ app.get('/', (req, res) => {
 //catch-all route handler--for unknown routes
 app.use((req, res) => res.sendStatus(404));
 
-app.listen(PORT, () => {
+const server = app.listen(PORT, () => {
   console.log(`Listening on port ${PORT}...`);
 });
 
 
-// const server = app.listen(PORT, () => console.log(`Listening at port ${PORT}`));
-// module.exports = server;
+const server = app.listen(PORT, () => console.log(`Listening at port ${PORT}`));
+
+module.exports = server;
